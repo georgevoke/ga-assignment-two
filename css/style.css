@@ -386,7 +386,7 @@ a, i:hover {
 
 	.sidebar {
 		float: left;
-		width: 100%;
+		max-width: 100%;
 		padding-left: 0px;
 		margin-bottom: 40px;
 		color: #033048;
