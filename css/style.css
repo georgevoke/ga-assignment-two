@@ -225,7 +225,7 @@ nav {
 
 .sidebar {
 	float: right;
-	width: 30%;
+	max-width: 30%;
 	padding-left: 10px;
 	color: #033048;
 }
