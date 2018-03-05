@@ -10,6 +10,7 @@ Student @GA in LDN
 /* SETUP
 /*******************************************/
 
+
 /* Box Model Hack */
 * {
   box-sizing: border-box;
@@ -25,18 +26,19 @@ Student @GA in LDN
     clear: both;
 }
 
+
 /******************************************
 /* BASE STYLES
 /*******************************************/
+
 
 body {
 	background-color: #EFEFEE;
 	color: #FFF;
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
-	font-size: 28px;
-	font-weight: 300;
 	line-height: 1.28;
 }
+
 h1 {
 	position: absolute;
 	font-size: 48px;
@@ -44,6 +46,7 @@ h1 {
 	letter-spacing: -0.8px;
 	top: 40px;
 }
+
 h2 {
 	text-align: center;
 	margin-bottom: 108px;
@@ -51,13 +54,29 @@ h2 {
 	letter-spacing: -0.8px;
 	font-weight: 500;
 }
+
 h3 {
-	margin-bottom: 21px;
 	color: #033048;
 	font-size: 40px;
 	font-weight: 600;
+	letter-spacing: -0.8px;
+	margin-bottom: 21px;
 }
+
+.post h3 {
+	text-align: left;
+	font-size: 42px;
+	margin-bottom: 0px;
+}
+
 h4 {
+	font-size: 34px;
+	font-weight: 800;
+	margin-bottom: 20px;
+	letter-spacing: -0.8px;
+}
+
+h5 {
 	text-align: center;
 	color: #F9E42E;
 	font-size: 48px;
@@ -65,37 +84,165 @@ h4 {
 	left: 10%;
 	letter-spacing: -0.8px;
 }
-h5 {
+
+h6 {
 	font-size: 18px;
 	font-weight: 500;
 }
+
 ul {
 	list-style-position: outside;
-	margin-top: 60px;
+}
+
+.benefits ul {
+	font-size: 28px;
+	font-weight: 300;
 	padding-left: 70px;
+	margin-top: 60px;
 	max-width: 560px;
 }
-li {
+
+.sidebar ul {
+	margin: 0 0 40px 10px;
+}
+
+nav li {
+	display: inline;
+	font-size: 22px;
+	font-weight: 400;
+	margin-right: 48px;
+	color: #FFF;
+}
+
+nav li:last-child {
+	margin-right: 0px;
+}
+
+.benefits li {
 	list-style-type: disc;
 	margin-bottom: 11px;
 }
+
+.sidebar li {
+	font-weight: 300;
+}
+
+p {
+	font-size: 28px;
+	font-weight: 300;
+	letter-spacing: -0.4px;
+}
+
+.benefits p {
+	max-width: 640px;
+}
+
+.post p {
+	text-align: left;
+}
+
+.post p, .sidebar p, .sidebar li {
+	font-size: 25px;
+	line-height: 1.4;
+	color: #606161;
+}
+
+.sidebar p {
+	color: #033048;
+}
+
+.post p:first-letter {
+  	float: left;
+  	font-size: 80px;
+  	font-weight: 600;
+  	line-height: 60px;
+  	padding-top: 15px;
+  	padding-right: 12px;
+}
+
 b {
 	font-style: normal;
 	font-weight: 600;
 }
+
+.about-relaxr b {
+  	font-weight: 800;
+}
+
 a {
-	text-align: center;
-	letter-spacing: -0.8px;
 	text-decoration: none;
-	padding: 10px 60px;
-	border-radius: 5px;
+	color: #F9E42E;
 	transition: all 0.3s;
 }
+
+.post a, .sidebar a {
+	color: #033048;
+}
+
 i {
 	transition: all 0.5s;
 	margin: 45px 27px 75px 20px;
 	font-size: 38px;
 }
+
+img {
+	width: 100%;
+	margin: 20px 0;
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+
+nav {
+	float: right;
+	padding: 60px 0;
+}
+
+.container {
+	max-width: 80%;
+ 	margin: 0 auto;
+  	width: 1024px;
+}
+
+.posts {
+	float: left;
+	max-width: 70%;
+	padding-right: 10px;
+}
+
+.post {
+	padding-bottom: 20px;
+	margin-bottom: 40px;
+	border-bottom: 1px solid #063049;
+}
+
+.posts .post:last-child {
+	margin-bottom: 120px;
+}
+
+.sidebar {
+	float: right;
+	width: 30%;
+	padding-left: 10px;
+	color: #033048;
+}
+
+.about-relaxr {
+	margin-bottom: 50px;
+}
+
+.header-blog {
+ 	background-color: #033048;
+ 	margin-bottom: 70px;
+}
+
+.header-index {
+ 	background-color: none;
+}
+
 footer {
 	padding-top: 50px;
 	text-align: center;
@@ -103,35 +250,32 @@ footer {
 	padding-bottom: 57px;
 }
 
-/******************************************
-/* LAYOUT
-/*******************************************/
-
-/* Center the container */
-.container {
-	max-width: 80%;
- 	margin: 0 auto;
-  	width: 1024px;
-}
 
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/
 
+
 .intro {
 	background: url("../images/header_bg.jpg") rgb(134,141,157);
-	padding-top: 204px;
-	padding-bottom: 292px;
+	padding-top: 234px;
+	padding-bottom: 262px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 .benefits {
 	padding-top: 90px;
 	padding-bottom: 66px;
 	color: #616161;
 }
+
+.visible {
+	display: block;
+}
+
 .testimonial {
 	background: url("../images/testimonial_bg.jpg") rgb(134,141,157);
 	font-size: 36px;
@@ -143,35 +287,55 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
- }
- .quote {
+}
+
+.quote {
  	max-width: 580px;
  	text-align: center;
  	margin: 0 auto;
  	font-size: 36px;
- }
- .sign-up {
+ 	color: #FFFFFF;
+}
+
+.sign-up {
 	background-color: #F9E42E;
 	padding-top: 42px;
 	padding-bottom: 42px;
 }
- .cta-1 {
+
+.cta-1, .cta-2 {
+	text-align: center;
+	font-size: 28px;
+	letter-spacing: -0.8px;
+	text-decoration: none;
+	padding: 10px 60px;
+	border-radius: 5px;
+}
+
+.cta-1 {
 	color: #033048;
 	font-weight: 600;
 	background-color: #F9E42E;
 }
- .cta-2 {
+
+.cta-2 {
 	color: #FFFFFF;
 	font-weight: 600;
 	background-color: #033048;
 }
 
-section.sign-up {
+section.intro, section.sign-up {
 	text-align: center;
 }
-section.intro {
-	text-align: center;
+
+.read-more {
+	text-align: right;
+	font-size: 22px;
+	color: #033048;
+	margin-top: 55px;
+	margin-bottom: 40px;
 }
+
 
 /******************************************
 /* STATES
@@ -181,27 +345,77 @@ section.intro {
 .cta-1:hover {
 	background-color: #D2C126;
 }
+
 .cta-2:hover {
-	background-color: #022638;
+	background-color: #043D5C;
 }
+
+nav a:hover {
+	color: #FFFFFF;
+}
+
+.nav-index a:hover, .nav-blog a:hover {
+	color: #FFFFFF;
+}
+
+.post a:hover, .categories a:hover, .about-relaxr a:hover {
+	text-decoration: underline;
+}
+
 i:hover {
 	color: #F9E42E;
 }
+
 a, i:hover {
 	cursor: pointer;
 }
 
+
 /******************************************
 /* MEDIA QUERIES
 /*******************************************/
+
+
+@media (max-width: 889px) {
+
+	.posts {
+		float: left;
+		max-width: 100%;
+		padding-right: 0px;
+	}
+
+	.sidebar {
+		float: left;
+		width: 100%;
+		padding-left: 0px;
+		margin-bottom: 40px;
+		color: #033048;
+	}
+
+	nav {                                  /*<-- pending better knowledge of burger navs*/
+		float: left;
+		padding: 120px 0 40px 0;
+	}
+
+	nav li {
+		font-size: 18px;
+		line-height: 2.0;
+		margin-right: 40px;
+	}
+}
 
 @media (max-width: 631px) {
 	
 	h2 {
 		font-size: 40px;
 	}
-	ul {
+	
+	.benefits ul {
 		padding-left: 30px;
+	}
+
+	.read-more {
+		text-align: left;
 	}
 }
 
@@ -211,37 +425,44 @@ a, i:hover {
 		font-size: 19px;
 		line-height: 1.6;
 	}
+	
 	h2 {
 		font-size: 36px;
 		margin-bottom: 80px;
 	}
+	
 	h3 {
 		margin-bottom: 18px;
 		font-size: 34px;
 		font-weight: 600;
-	}
-	ul {
-		margin-top: 40px;
-		padding-left: 22px;
 	}
 	
 	.benefits {
 		padding-top: 70px;
 		padding-bottom: 70px;
 	}
+
+	.benefits ul {
+		margin-top: 40px;
+		padding-left: 22px;
+	}
+	
 	.intro {
 		padding-top: 190px;
 		padding-bottom: 140px;
 	}
+	
 	.quote {
 		font-size: 30px;
 	}
+	
 	.cta-1 {
 	 	font-size: 26px;
 		color: #033048;
 		font-weight: 600;
 		background-color: #F9E42E;
 	}
+ 	
  	.cta-2 {
 		font-size: 26px;
 		color: #FFFFFF;
