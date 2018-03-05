@@ -209,7 +209,7 @@ nav {
 
 .posts {
 	float: left;
-	width: 70%;
+	max-width: 70%;
 	padding-right: 10px;
 }
 
